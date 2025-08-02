@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Dark Theme Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            gap: 2;
+            
+        
+         
+           
+        }
+       
+  
+.dots-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.dots-bg .dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: radial-gradient(circle, white, #00ccff);
+    animation: sparkle 2s infinite ease-in-out;
+    opacity: 0.7;
+}
+
+/* Sparkle animation */
+@keyframes sparkle {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(1.8);
+        opacity: 1;
+    }
+}
+
+
+    
+        .header {
+           background-color: transparent;
+            background-image: url("pexels-magda-ehlers-pexels-1329296.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            width: 100%;
+            max-width: 700px;
+            max-height: 400px;
+            height: 100%;
+            box-shadow: 0 0 20px rgba(117, 235, 244, 0.1);
+            color: black;
+            font-size:2em;
+            
+           
+
+        }
+        .header .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 100%;
+         width: 100%;
+         background-color: rgba(0, 0, 0, 0.2); /* opacity Adjust*/
+         z-index: 1;
+         border-radius: 1rem;
+         
+}
+
+       .header h1 {
+           .header h1 {
+             position: relative;
+            z-index: 2;
+             font-size: 2.5rem;
+            font-weight: 800;         /* Bold text */
+            color: black;           /* Bright white text */
+            text-shadow: 2px 2px 8px rgba(6, 6, 6, 0.968); /* Dark shadow for contrast */
+            letter-spacing: 1px;
+}
+
+}
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        button {
+            padding: 1rem 2rem;
+            /* border: none; */
+            border-radius: 2rem;
+            background-color: #333;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+             background: 0.5s ease;
+        }
+        button:hover {
+            transform: scale(1.1);
+            background-color: #444;
+             background-color: #00ccff;
+            color: #0d0d0d;
+            box-shadow: 0 0 15px #00ccff,0 0 30px #00ccff, 0 0 45px #00ccff;
+        }
+        button{
+            border: 2px solid #00ccff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+           background-color: transparent;
+            color: white;
+            border-radius: 2rem;
+            width: 35%;
+            margin-top:1.5em ;
+            font-size: 1.5vw;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+
+        }
+        button::before{
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 2rem;
+            background: radial-gradient(circle,rgba(0,234,255,0.3), rgba(0,0,0,0));
+            opacity: 0;
+            transition: opacity 0.3s;
+
+        }
+    
+        button:hover::before{
+            opacity: 1;
+        }
+        
+          .linked-content-easy,.linked-content-medium,.linked-content-hard {
+            display: none;
+            background-color: #222;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px rgba(255,255,255,0.1);
+            margin-bottom: 2rem;
+           max-width: 650px;
+           max-height: 800px;
+           height: 100%;
+           width: 100%;
+          
+        }
+        .linked-container-easy,.linked-container-medium,.linked-container-hard {
+            background-color: #1f1f1f;
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+           
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            margin-bottom: 1rem;
+           
+          
+        }
+        .input-button-wrapper-easy, .input-button-wrapper-medium,.input-button-wrapper-hard {
+             display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 0.2rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            box-sizing: border-box; 
+           
+        }
+        input{
+            /* border-radius: 2rem;
+            background-color: rgba(0,0,0,0.4);
+            color: white;
+            height: 30%;
+            margin-bottom: 2rem;
+            text-align: center;
+         */
+             /* min-width: 100px; */
+            max-width: 400px;
+            width: 100%;
+             padding: 15px 20px;
+           font-size: 1.2rem;
+            border-radius: 30px;
+            border: 2px solid #00ccff;
+            background-color:transparent;
+            color: white;
+            text-align: center;
+            
+        }
+        input::placeholder{
+            color: white;
+            text-wrap: wrap;
+       
+
+        }
+     
+        #b1,#b2,#b3{
+           
+            margin-bottom: 8%; 
+        }
+    </style>
+</head>
+<body>
+    <div class="dots-bg"></div>
+
+    <div class="header" data-aos="fade-down">
+      <div class="overlay"></div>
+        <h1 id="random-title">The Number Hunt</h1>
+    </div>
+    <div class="buttons" data-aos="zoom-in">
+        <button onclick="loadLinkedPage1()">Easy Hunt</button>
+        <button onclick="loadLinkedPage2()">Medium Hunt</button>
+        <button onclick="loadLinkedPage3()">Hard Hunt</button>
+    </div> <br><br>
+ <!-- easy linked page  -->
+     <div id="linkedPage1" class="linked-content-easy" data-aos="fade-up">
+        <div class="linked-container-easy" data-aos="fade-right">
+            <h3>EASY GUESS</h3> <br>
+            <div class="input-button-wrapper-easy">
+                <input type="text" id="guessInput1" placeholder="Enter the number..." />
+                <button id="b1" onclick="submitGuess1()">Submit</button>
+            </div>
+            <div class="output-div" id="p1" style="min-height: 50px;"></div>
+        </div>
+    </div>
+    <!-- medium linked Page -->
+       <div id="linkedPage2" class="linked-content-medium" data-aos="fade-up">
+        <div class="linked-container-medium" data-aos="fade-right">
+            <h3>MEDIUM GUESS</h3> <br>
+            <div class="input-button-wrapper-medium">
+                <input type="text"  id="guessInput2" placeholder="Enter the number..." />
+                <button id="b2" onclick="submitGuess2()">Submit</button>
+            </div>
+            <div class="output-div" id="p2" style="min-height: 50px;"></div>
+        </div>
+    </div>
+
+    <!-- hard linked Page -->
+       <div id="linkedPage3" class="linked-content-hard" data-aos="fade-up">
+        <div class="linked-container-hard" data-aos="fade-right">
+            <h3>HARD GUESS</h3> <br>
+            <div class="input-button-wrapper-hard">
+                <input type="text" id="guessInput3" placeholder="Enter the number..." />
+                <button id="b3" onclick="submitGuess3()">Submit</button>
+            </div>
+            <div class="output-div" id="p3" style="min-height: 50px;"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        const titles = ["The Number Hunt"];
+
+        const randomIndex = Math.floor(Math.random() * titles.length);
+        document.getElementById("random-title").innerText = titles[randomIndex];
+
+         function loadLinkedPage1() {
+            const linked = document.getElementById("linkedPage1");
+            linked.style.display = "block";
+            AOS.refresh();
+            linked.scrollIntoView({ behavior: 'smooth' });
+        }
+        function loadLinkedPage2() {
+            const linked = document.getElementById("linkedPage2");
+            linked.style.display = "block";
+            AOS.refresh();
+            linked.scrollIntoView({ behavior: 'smooth' });
+        }
+        function loadLinkedPage3() {
+            const linked = document.getElementById("linkedPage3");
+            linked.style.display = "block";
+            AOS.refresh();
+            linked.scrollIntoView({ behavior: 'smooth' });
+        }
+
+window.onload = function(){
+let targetNumber1 = Math.floor(Math.random() * 10);
+let output1 = "";
+let attempts1 = 5;
+
+function submitGuess1() {
+    let guess = parseInt(document.getElementById("guessInput1").value);
+    if (isNaN(guess) || guess < 1 || guess > 10){
+        alert("Please enter a number between 1 and 10.");
+        return;
+    }
+
+    let newMessage1 = "";
+    let gameover1="";
+
+    if (attempts1 > 0) {
+        if (guess === targetNumber1) {
+            newMessage1 += "<strong>🎉Congratulations! You guessed the correct value.</strong><br>";
+            newMessage1 += `You guessed: ${guess} | Actual value: ${targetNumber1}<br>`;
+            document.getElementById("guessInput1").disabled = true;
+        } else {
+            attempts1--;
+            newMessage1 += `❌Wrong guess. Attempts left: ${attempts1}<br>`;
+            if (attempts1 === 0) {
+                gameover1 += `<strong>💀 Game Over. The correct number was ${targetNumber1}.</strong><br>`;
+                document.getElementById("guessInput1").disabled = true;
+            }
+        }
+    }
+
+    output1 =  gameover1+newMessage1 + output1;
+    document.getElementById("p1").innerHTML = output1;
+    document.getElementById("guessInput1").value = "";
+    document.getElementById("guessInput1").focus();
+}
+document.getElementById("guessInput1").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        submitGuess1();
+    }
+});
+
+let targetNumber2 = Math.floor(Math.random() * 20);
+let output2 = "";
+let attempts2 = 10;
+
+function submitGuess2() {
+    let guess = parseInt(document.getElementById("guessInput2").value);
+    if (isNaN(guess) || guess < 1 || guess > 20){
+        alert("Please enter a number between 1 and 20.");
+        return;
+    }
+
+    let newMessage2 = "";
+    let gameover2 = "";
+    if (attempts2 > 0) {
+        if (guess === targetNumber2) {
+            newMessage2 += "<strong>🎉Congratulations! You guessed the correct value.</strong><br>";
+            newMessage2 += `You guessed: ${guess} | Actual value: ${targetNumber2}<br>`;
+            document.getElementById("guessInput2").disabled = true;
+        } else {
+            attempts2--;
+            newMessage2 += `❌Wrong guess. Attempts left: ${attempts2}<br>`;
+            if (attempts2 === 0) {
+                 gameover2 += `<strong>💀 Game Over. The correct number was ${targetNumber2}.</strong><br>`;
+                document.getElementById("guessInput2").disabled = true;
+            }
+        }
+    }
+
+    output2 = gameover2 + newMessage2 + output2;
+    document.getElementById("p2").innerHTML = output2;
+    document.getElementById("guessInput2").value = "";
+    document.getElementById("guessInput2").focus();
+}
+document.getElementById("guessInput2").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        submitGuess2();
+    }
+});
+
+let targetNumber3 = Math.floor(Math.random() * 30);
+let output3 = "";
+let attempts3 = 15;
+
+function submitGuess3() {
+    let guess = parseInt(document.getElementById("guessInput3").value);
+    if (isNaN(guess) || guess < 1 || guess > 30){
+        alert("Please enter a number between 1 and 30.");
+        return;
+    }
+
+    let newMessage3 = "";
+    let gameover3 = "";
+
+    if (attempts3 > 0) {
+        if (guess === targetNumber3) {
+            newMessage3 += "<strong>🎉Congratulations! You guessed the correct value.</strong><br>";
+            newMessage3 += `You guessed: ${guess} | Actual value: ${targetNumber3}<br>`;
+            document.getElementById("guessInput3").disabled = true;
+        } else {
+            attempts3--;
+            newMessage3 += `❌Wrong guess. Attempts left: ${attempts3}<br>`;
+            if (attempts3 === 0) {
+                gameover3 += `<strong>💀 Game Over. The correct number was ${targetNumber3}.</strong><br>`;
+                document.getElementById("guessInput3").disabled = true;
+            }
+        }
+    }
+
+    output3 = gameover3 + newMessage3 + output3;
+    document.getElementById("p3").innerHTML = output3;
+    document.getElementById("guessInput3").value = "";
+    document.getElementById("guessInput3").focus();
+}
+
+
+//  Enter key event for guessInput3
+document.getElementById("guessInput3").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        submitGuess3();  // Call your submit function
+    }
+});
+};
+
+const container = document.createElement("div");
+container.className = "dots-bg";
+document.body.appendChild(container);
+
+for (let i = 0; i < 100; i++) {
+    const dot = document.createElement("div");
+    dot.className = "dot";
+    dot.style.top = Math.random() * 100 + "vh";
+    dot.style.left = Math.random() * 100 + "vw";
+    dot.style.animationDelay = Math.random() * 3 + "s";
+    container.appendChild(dot);
+}
+
+
+
+
+    </script>
+</body>
+</html>
