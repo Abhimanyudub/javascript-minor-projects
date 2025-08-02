@@ -39,3 +39,37 @@ A responsive web-based number guessing game with 3 difficulty levels: Easy, Medi
 ## 💻 How to Run the Game
 
 1. Clone this repository:
+   https://github.com/Abhimanyudub/javascript-number-guessing-game
+   
+2. Open the project folder:
+  cd javascript-number-guessing-game
+
+3. Open `main.html` in any modern web browser.
+
+That’s it! 🎉 Start playing and have fun.
+
+---
+
+## 👨‍💻 Author
+
+**Abhimanyu Dub**
+
+> Passionate web developer exploring fun projects with JavaScript.
+
+[GitHub](https://github.com/your-username) | [LinkedIn](https://www.linkedin.com/in/your-profile) | [Portfolio](https://your-portfolio-link.com)
+
+---
+
+## 📄 License
+
+This project is open-source and free to use under the [MIT License](LICENSE).
+
+---
+
+## 💡 Extra (Optional)
+
+Feel free to contribute! Pull requests are welcome for improvements like:
+- Adding sound effects 🎵
+- Improving UI animations 🎨
+- Supporting score tracking 🏆
+
